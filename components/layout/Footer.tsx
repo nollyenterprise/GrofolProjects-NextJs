@@ -35,7 +35,15 @@ const footerLinks = {
   ],
 };
 
+import contactdetails from '@/data/contact-details.json';
 import socials from '@/data/socials.json';
+// Map string IDs from JSON to actual React components
+const iconMap: Record<string, React.ElementType> = {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+};
 
 export function Footer() {
   return (
@@ -61,24 +69,30 @@ export function Footer() {
               <div className="flex items-center gap-3 text-[var(--color-muted)]">
                 <Mail className="w-5 h-5 text-[var(--color-secondary)]" />
                 <a
-                  href="mailto:info@grofolprojects.com"
+                  href={`mailto:${contactdetails.phone[0].value}`}
                   className="hover:text-[var(--color-secondary)] transition-colors"
                 >
-                  info@grofolprojects.com
+                  {contactdetails.email[0].label}
                 </a>
               </div>
               <div className="flex items-center gap-3 text-[var(--color-muted)]">
                 <Phone className="w-5 h-5 text-[var(--color-secondary)]" />
                 <a
-                  href="tel:+2341234567890"
+                  href={`tel:${contactdetails.phone[0].value}`}
                   className="hover:text-[var(--color-secondary)] transition-colors"
                 >
-                  +234 123 456 7890
+                  {contactdetails.phone[0].label}
                 </a>
               </div>
               <div className="flex items-start gap-3 text-[var(--color-muted)]">
                 <MapPin className="w-5 h-5 text-[var(--color-secondary)] mt-1" />
-                <span>Lagos, Nigeria</span>
+                <span>
+                  {contactdetails.address[0].street},{" "}
+                  {contactdetails.address[0].city},{" "}
+                  {contactdetails.address[0].state}{" "}
+                  {contactdetails.address[0].country}{" "}
+                  {contactdetails.address[0].postcode}
+                </span>
               </div>
             </div>
           </div>
@@ -168,43 +182,9 @@ export function Footer() {
               reserved.
             </p>
             <div className="flex items-center gap-4">
-              <a
-                href="https://www.linkedin.com/company/102964453"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[var(--color-bg)] flex items-center justify-center text-[var(--color-muted)] hover:text-[var(--color-secondary)] hover:bg-[var(--color-surface)] transition-all duration-300"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="https://www.instagram.com/grofolprojectslimited"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[var(--color-bg)] flex items-center justify-center text-[var(--color-muted)] hover:text-[var(--color-secondary)] hover:bg-[var(--color-surface)] transition-all duration-300"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="https://x.com/GrofolProjects"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[var(--color-bg)] flex items-center justify-center text-[var(--color-muted)] hover:text-[var(--color-secondary)] hover:bg-[var(--color-surface)] transition-all duration-300"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="https://facebook.com/profile.php?id=61559822753554&_rdc=1&_rdr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[var(--color-bg)] flex items-center justify-center text-[var(--color-muted)] hover:text-[var(--color-secondary)] hover:bg-[var(--color-surface)] transition-all duration-300"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
               {socials.map((v: any, i: number)=>{
+                const Icon = iconMap[v.icon]; // lookup the icon by name
+                if (!Icon) return null; // skip if icon not found
                 return (
                   <a
                     href={v.link}
@@ -214,7 +194,7 @@ export function Footer() {
                     aria-label={v.title}
                     key={i}
                   >
-                    <Facebook className="w-5 h-5" />
+                    <Icon className="w-5 h-5" />
                   </a>
                 )
               })}
