@@ -1,0 +1,80 @@
+[
+  {
+    "id": "power-renewable",
+    "title": "Power & Renewable Energy",
+    "description": "Solar, wind, and hybrid power solutions with ongoing maintenance and optimization.",
+    "icon": "Zap",
+    "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&h=600&fit=crop",
+    "features": [
+      "Solar PV installation",
+      "Wind turbine projects",
+      "Power system maintenance",
+      "Energy audits"
+    ]
+  },
+  {
+    "id": "marine-equipment",
+    "title": "Marine Equipment",
+    "description": "Procurement and installation of marine and offshore equipment to international standards.",
+    "icon": "Ship",
+    "image": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&h=600&fit=crop",
+    "features": [
+      "Offshore equipment supply",
+      "Marine installation",
+      "Equipment commissioning",
+      "Technical support"
+    ]
+  },
+  {
+    "id": "oil-gas",
+    "title": "Oil & Gas Procurement",
+    "description": "Reliable supply chain management and maintenance services for oil and gas operations.",
+    "icon": "Droplet",
+    "image": "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=800&h=600&fit=crop",
+    "features": [
+      "Equipment procurement",
+      "Parts & spares supply",
+      "Preventive maintenance",
+      "Emergency repairs"
+    ]
+  },
+  {
+    "id": "facility-safety",
+    "title": "Facility & Safety Management",
+    "description": "Comprehensive facility management and safety systems for industrial operations.",
+    "icon": "Shield",
+    "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=600&fit=crop",
+    "features": [
+      "Safety system design",
+      "Facility audits",
+      "Compliance consulting",
+      "Risk management"
+    ]
+  },
+  {
+    "id": "engineering",
+    "title": "Engineering & EPIC",
+    "description": "Full-cycle engineering, procurement, installation, and commissioning services.",
+    "icon": "Settings",
+    "image": "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800&h=600&fit=crop",
+    "features": [
+      "Engineering design",
+      "Procurement management",
+      "Installation services",
+      "Commissioning support"
+    ]
+  },
+  {
+    "id": "consulting",
+    "title": "Technical Consulting",
+    "description": "Expert consulting for industrial projects, feasibility studies, and optimization.",
+    "icon": "Briefcase",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+    "features": [
+      "Feasibility studies",
+      "Project management",
+      "Technical training",
+      "Process optimization"
+    ]
+  }
+]

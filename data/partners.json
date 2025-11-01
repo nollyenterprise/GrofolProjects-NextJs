@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Lower Friction",
+    "logo": "/images/partners/lower-friction.jpg",
+    "website": "https://lowerfriction.com",
+    "category": "Partner"
+  },
+  {
+    "id": 2,
+    "name": "Atex Workshop",
+    "logo": "/images/partners/atex.jpg",
+    "website": "https://atexworkshop.com/",
+    "category": "Partner"
+  },
+  {
+    "id": 3,
+    "name": "CEAG",
+    "logo": "/images/partners/ceag.jpg",
+    "website": "https://ceag.co.uk/",
+    "category": "Partner"
+  },
+  {
+    "id": 4,
+    "name": "DuraChioce",
+    "logo": "/images/partners/durachoice.jpg",
+    "website": "https://www.durachoice.com/",
+    "category": "Partner"
+  },
+  {
+    "id": 5,
+    "name": "Sealey",
+    "logo": "/images/partners/sealey.jpg",
+    "website": "https://www.sealey.co.uk/",
+    "category": "Partner"
+  },
+  {
+    "id": 6,
+    "name": "Sartra International",
+    "logo": "/images/partners/sartra.jpg",
+    "website": "https://www.sartra.com",
+    "category": "Partner"
+  },
+  {
+    "id": 7,
+    "name": "AFC",
+    "logo": "/images/partners/afc.jpg",
+    "website": "https://advfiltration.com",
+    "category": "Partner"
+  },
+  {
+    "id": 8,
+    "name": "Safetec",
+    "logo": "/images/partners/safetec.jpg",
+    "website": "https://safetec.com",
+    "category": "Partner"
+  },
+  {
+    "id": 9,
+    "name": "Rotork",
+    "logo": "/images/partners/rotork.jpg",
+    "website": "https://www.rotork.com/",
+    "category": "Partner"
+  },
+  {
+    "id": 10,
+    "name": "Thorn Lighting",
+    "logo": "/images/partners/thorn.jpg",
+    "website": "https://www.thornlighting.com/",
+    "category": "Partner"
+  },
+  {
+    "id": 11,
+    "name": "Ardova",
+    "logo": "/images/partners/ardova.jpg",
+    "website": "https://ardovaplc.com/",
+    "category": "Partner"
+  },
+  {
+    "id": 12,
+    "name": "OME",
+    "logo": "/images/partners/ome.jpg",
+    "website": "#",
+    "category": "Partner"
+  },
+  {
+    "id": 13,
+    "name": "Xiamen",
+    "logo": "/images/partners/xiamen.jpg",
+    "website": "#",
+    "category": "Partner"
+  },
+  {
+    "id": 14,
+    "name": "Ajax",
+    "logo": "/images/partners/ajax.jpg",
+    "website": "#",
+    "category": "Partner"
+  },
+  {
+    "id": 15,
+    "name": "4Evalve.jpg",
+    "logo": "/images/partners/4evalve.jpg",
+    "website": "https://www.4evalve.com/",
+    "category": "Partner"
+  },
+  {
+    "id": 16,
+    "name": "Lakeland",
+    "logo": "/images/partners/lakeland.jpg",
+    "website": "#",
+    "category": "Partner"
+  }
+]

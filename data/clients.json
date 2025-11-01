@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "name": "Addax Petroleum",
+    "logo": "/images/clients/addax-petroleum.png",
+    "website": "#",
+    "category": "Oil & Gas"
+  },
+  {
+    "id": 2,
+    "name": "Ansaldo",
+    "logo": "/images/clients/ansaldo.png",
+    "website": "#",
+    "category": "Oil & Gas"
+  },
+  {
+    "id": 3,
+    "name": "BW Offshore",
+    "logo": "/images/clients/bw-offshore.jpg",
+    "website": "#",
+    "category": "Oil & Gas"
+  },
+  {
+    "id": 4,
+    "name": "Chevron",
+    "logo": "/images/clients/chevron.png",
+    "website": "https://www.chevron.com",
+    "category": "Energy"
+  },
+  {
+    "id": 5,
+    "name": "Daewoo",
+    "logo": "/images/clients/daewoo.jpg",
+    "website": "#",
+    "category": "Marine"
+  },
+  {
+    "id": 6,
+    "name": "Dangote Group",
+    "logo": "/images/clients/dangote.jpg",
+    "website": "https://www.dangote.com",
+    "category": "Industrial"
+  },
+  {
+    "id": 7,
+    "name": "EGBIN",
+    "logo": "/images/clients/egbin.png",
+    "website": "#",
+    "category": "Power"
+  },
+  {
+    "id": 8,
+    "name": "ENI",
+    "logo": "/images/clients/eni.png",
+    "website": "#",
+    "category": "Power"
+  },
+  {
+    "id": 9,
+    "name": "Wartsila",
+    "logo": "/images/clients/wartsila.png",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 10,
+    "name": "Transcorp Power",
+    "logo": "/images/clients/transcorp.jpg",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 11,
+    "name": "Total",
+    "logo": "/images/clients/total.png",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 12,
+    "name": "Shell",
+    "logo": "/images/clients/shell.png",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 13,
+    "name": "Notore",
+    "logo": "/images/clients/notore.jpg",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 14,
+    "name": "",
+    "logo": "/images/clients/",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 15,
+    "name": "NNPC",
+    "logo": "/images/clients/nnpc.jpg",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 16,
+    "name": "NDPC",
+    "logo": "/images/clients/ndpc.png",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 17,
+    "name": "",
+    "logo": "/images/clients/",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 18,
+    "name": "LNG",
+    "logo": "/images/clients/lng.png",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 19,
+    "name": "Lekoil",
+    "logo": "/images/clients/lekoil.jpg",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 20,
+    "name": "",
+    "logo": "/images/clients/",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 21,
+    "name": "Indorama",
+    "logo": "/images/clients/indorama.png",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 22,
+    "name": "IGPES",
+    "logo": "/images/clients/igpes.jpg",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 23,
+    "name": "Ibom Power",
+    "logo": "/images/clients/ibom-power.png",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 24,
+    "name": "General Electrics",
+    "logo": "/images/clients/general-electrics.png",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 25,
+    "name": "First E & P",
+    "logo": "/images/clients/first-ep.jpg",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 26,
+    "name": "",
+    "logo": "/images/clients/",
+    "website": "#",
+    "category": "Client"
+  },
+  {
+    "id": 27,
+    "name": "Exxon Mobil",
+    "logo": "/images/clients/exxon.png",
+    "website": "#",
+    "category": "Client"
+  }
+]

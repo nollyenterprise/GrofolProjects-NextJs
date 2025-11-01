@@ -1,0 +1,34 @@
+{
+  "whyChooseUs": [
+    {
+      "title": "Global Standards",
+      "description": "We adhere to international engineering and safety standards in all our projects.",
+      "icon": "Globe"
+    },
+    {
+      "title": "Technical Expertise",
+      "description": "Our team comprises highly qualified engineers and technical specialists.",
+      "icon": "GraduationCap"
+    },
+    {
+      "title": "Proven Track Record",
+      "description": "Over 200 successfully completed projects across multiple industries.",
+      "icon": "Trophy"
+    },
+    {
+      "title": "Innovation Driven",
+      "description": "We leverage cutting-edge technology and innovative solutions for optimal results.",
+      "icon": "Lightbulb"
+    },
+    {
+      "title": "Timely Delivery",
+      "description": "Committed to meeting deadlines while maintaining the highest quality standards.",
+      "icon": "Clock"
+    },
+    {
+      "title": "24/7 Support",
+      "description": "Round-the-clock technical support and emergency response services.",
+      "icon": "Headphones"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Adebayo Ogunlesi",
+    "position": "Director of Operations",
+    "company": "Nigerian Energy Corporation",
+    "content": "Grofol Projects delivered our 50MW solar installation ahead of schedule and under budget. Their technical expertise and project management are world-class.",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Engr. Chioma Nwosu",
+    "position": "Head of Procurement",
+    "company": "Delta Offshore Services",
+    "content": "We have worked with Grofol on multiple marine equipment projects. Their attention to detail and compliance with international standards is exceptional.",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Ibrahim Mohammed",
+    "position": "Plant Manager",
+    "company": "Sahara Gas Processing",
+    "content": "The maintenance services provided by Grofol have significantly improved our facility uptime. Their team is highly professional and responsive.",
+    "rating": 5
+  }
+]

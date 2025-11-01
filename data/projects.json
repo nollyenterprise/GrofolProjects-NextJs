@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "50MW Solar Farm Installation",
+    "category": "Power & Renewable",
+    "location": "Kano State, Nigeria",
+    "year": "2024",
+    "image": "https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg",
+    "description": "Large-scale solar installation providing clean energy to thousands of homes."
+  },
+  {
+    "id": 2,
+    "title": "Offshore Platform Equipment Supply",
+    "category": "Marine Equipment",
+    "location": "Niger Delta",
+    "year": "2023",
+    "image": "https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg",
+    "description": "Complete procurement and installation of offshore drilling equipment."
+  },
+  {
+    "id": 3,
+    "title": "Gas Processing Facility Maintenance",
+    "category": "Oil & Gas",
+    "location": "Rivers State",
+    "year": "2024",
+    "image": "https://images.pexels.com/photos/257700/pexels-photo-257700.jpeg",
+    "description": "Ongoing maintenance contract for major gas processing facility."
+  },
+  {
+    "id": 4,
+    "title": "Industrial Safety System Upgrade",
+    "category": "Facility & Safety",
+    "location": "Lagos",
+    "year": "2023",
+    "image": "https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg",
+    "description": "Comprehensive safety system installation for manufacturing complex."
+  },
+  {
+    "id": 5,
+    "title": "Wind Energy Project Development",
+    "category": "Power & Renewable",
+    "location": "Plateau State",
+    "year": "2024",
+    "image": "https://images.pexels.com/photos/1438384/pexels-photo-1438384.jpeg",
+    "description": "Development and installation of 30MW wind energy facility."
+  },
+  {
+    "id": 6,
+    "title": "Refinery Equipment Overhaul",
+    "category": "Oil & Gas",
+    "location": "Port Harcourt",
+    "year": "2023",
+    "image": "https://images.pexels.com/photos/2886937/pexels-photo-2886937.jpeg",
+    "description": "Major overhaul and upgrade of refinery processing equipment."
+  }
+]

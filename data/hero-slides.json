@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Power & Renewable Energy Solutions",
+    "subtitle": "Engineering Excellence for Sustainable Energy",
+    "description": "From solar installations to wind energy projects, we deliver cutting-edge power solutions across Africa.",
+    "image": "https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg",
+    "ctaText": "Explore Energy Solutions",
+    "ctaHref": "/services/power-renewable"
+  },
+  {
+    "id": 2,
+    "title": "Marine & Offshore Equipment",
+    "subtitle": "World-Class Maritime Engineering",
+    "description": "Comprehensive procurement and installation of marine equipment with global compliance standards.",
+    "image": "https://images.pexels.com/photos/2144905/pexels-photo-2144905.jpeg",
+    "ctaText": "Discover Marine Services",
+    "ctaHref": "/services/marine-equipment"
+  },
+  {
+    "id": 3,
+    "title": "Oil & Gas Procurement",
+    "subtitle": "Reliable Supply Chain Solutions",
+    "description": "End-to-end procurement and maintenance services for the oil and gas industry.",
+    "image": "https://images.pexels.com/photos/1143758/pexels-photo-1143758.jpeg",
+    "ctaText": "View Oil & Gas Services",
+    "ctaHref": "/services/oil-gas"
+  },
+  {
+    "id": 4,
+    "title": "Industrial Engineering & EPIC",
+    "subtitle": "Integrated Project Delivery",
+    "description": "Complete engineering, procurement, installation, and commissioning for industrial facilities.",
+    "image": "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg",
+    "ctaText": "Learn About EPIC",
+    "ctaHref": "/services/engineering"
+  }
+]
