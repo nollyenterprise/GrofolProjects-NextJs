@@ -9,20 +9,19 @@ import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
+import servicesData from "@/data/services.json";
+export const services = servicesData.map((service) => ({
+  name: service.title,
+  href: `/services/${service.id}`,
+}));
+
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   {
     name: 'Services',
     href: '/services',
-    submenu: [
-      { name: 'Power & Renewable Energy', href: '/services/power-renewable' },
-      { name: 'Marine Equipment', href: '/services/marine-equipment' },
-      { name: 'Oil & Gas Procurement', href: '/services/oil-gas' },
-      { name: 'Facility & Safety', href: '/services/facility-safety' },
-      { name: 'Engineering & EPIC', href: '/services/engineering' },
-      { name: 'Technical Consulting', href: '/services/consulting' },
-    ],
+    submenu: services,
   },
   { name: 'Projects', href: '/projects' },
   { name: 'Careers', href: '/careers' },
@@ -143,7 +142,7 @@ export function Header() {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
+              initial={{ opacity: 0.9, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden overflow-hidden"
@@ -153,7 +152,7 @@ export function Header() {
                   <div key={item.name}>
                     <Link
                       href={item.href}
-                      className="block px-4 py-3 text-base font-medium text-[var(--color-content)] hover:text-[var(--color-secondary)] hover:bg-[var(--color-surface)] rounded-xl transition-all duration-200"
+                      className="block px-4 py-1 text-base font-medium text-[var(--color-content)] hover:text-[var(--color-secondary)] hover:bg-[var(--color-surface)] rounded-xl transition-all duration-200"
                       onClick={() => setIsOpen(false)}
                     >
                       {item.name}
@@ -164,7 +163,7 @@ export function Header() {
                           <Link
                             key={subItem.name}
                             href={subItem.href}
-                            className="block px-4 py-2 text-sm text-[var(--color-muted)] hover:text-[var(--color-secondary)] transition-colors"
+                            className="block px-4 py-1 text-sm text-[var(--color-muted)] hover:text-[var(--color-secondary)] transition-colors"
                             onClick={() => setIsOpen(false)}
                           >
                             {subItem.name}

@@ -14,24 +14,25 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import Image from 'next/image';
 
+import servicesData from "@/data/services.json";
+export const services = servicesData.map((service) => ({
+  name: service.title,
+  href: `/services/${service.id}`,
+}));
+
 const footerLinks = {
   company: [
     { name: 'About Us', href: '/about' },
-    { name: 'Our Team', href: '/about#team' },
+    // { name: 'Our Team', href: '/about#team' },
     { name: 'Careers', href: '/careers' },
     { name: 'Contact', href: '/contact' },
   ],
-  services: [
-    { name: 'Power & Renewable Energy', href: '/services/power-renewable' },
-    { name: 'Marine Equipment', href: '/services/marine-equipment' },
-    { name: 'Oil & Gas', href: '/services/oil-gas' },
-    { name: 'Engineering & EPIC', href: '/services/engineering' },
-  ],
+  services: services,
   resources: [
     { name: 'Projects', href: '/projects' },
     { name: 'Case Studies', href: '/projects' },
     { name: 'Industry Insights', href: '/about' },
-    { name: 'Certifications', href: '/about#certifications' },
+    // { name: 'Certifications', href: '/about#certifications' },
   ],
 };
 
@@ -69,7 +70,7 @@ export function Footer() {
               <div className="flex items-center gap-3 text-[var(--color-muted)]">
                 <Mail className="w-5 h-5 text-[var(--color-secondary)]" />
                 <a
-                  href={`mailto:${contactdetails.phone[0].value}`}
+                  href={`mailto:${contactdetails.email[0].value}`}
                   className="hover:text-[var(--color-secondary)] transition-colors"
                 >
                   {contactdetails.email[0].label}
@@ -167,7 +168,7 @@ export function Footer() {
                 placeholder="Enter your email"
                 className="flex-1 bg-[var(--color-surface)] border-[var(--color-surface)] text-[var(--color-content)]"
               />
-              <Button variant="secondary" type="submit">
+              <Button variant="secondary" type="button">
                 Subscribe
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>

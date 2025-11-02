@@ -29,6 +29,50 @@ export const metadata: Metadata = generateMetadata({
     'Industrial Solutions Africa',
     'EPIC Services Nigeria',
   ],
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
+  openGraph: {
+    title: "Engineering Solutions in Africa",
+    description:
+      "Engineering, oil & gas, and industrial consulting company providing power, marine, and renewable energy solutions across Africa.",
+    url: "https://grofolprojects.com",
+    siteName: "Engineering Solutions Africa",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Engineering Solutions Africa",
+      },
+    ],
+    locale: "en_NG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Engineering Solutions in Africa",
+    description:
+      "Providing power, marine, oil & gas, and renewable energy solutions across Africa.",
+    creator: "@yourhandle",
+    images: ["/og-image.jpg"],
+  },
+  authors: [{ name: "Engineering Solutions Africa", url: "https://grofolprojects.com" }],
+  viewport: "width=device-width, initial-scale=1.0",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
 });
 
 export default function RootLayout({
@@ -41,6 +85,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="icon" href="/images/icon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

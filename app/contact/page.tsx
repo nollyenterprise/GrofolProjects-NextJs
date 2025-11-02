@@ -17,22 +17,25 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 
+import contactdetails from '@/data/contact-details.json';
+import { useToast } from '@/hooks/use-toast';
+
 const contactInfo = [
   {
     icon: MapPin,
     title: 'Visit Us',
     details: [
-      'Grofol Projects Limited',
-      'Plot 45, Industrial Avenue',
-      'Lagos, Nigeria'
-    ]
+      "Grofol Projects Limited",
+      `${contactdetails.address[0].street}`,
+      `${contactdetails.address[0].city}, ${contactdetails.address[0].state}`,
+      `${contactdetails.address[0].country}`,
+    ],
   },
   {
     icon: Phone,
     title: 'Call Us',
     details: [
-      '+234 (0) 803 XXX XXXX',
-      '+234 (0) 805 XXX XXXX',
+      ...contactdetails.phone.map(p => p.label),
       'Mon - Fri: 8:00 AM - 6:00 PM'
     ]
   },
@@ -40,8 +43,7 @@ const contactInfo = [
     icon: Mail,
     title: 'Email Us',
     details: [
-      'info@grofolprojects.com',
-      'projects@grofolprojects.com',
+      ...contactdetails.email.map(e => e.label),
       'Response within 24 hours'
     ]
   },
@@ -57,6 +59,8 @@ const contactInfo = [
 ];
 
 export default function ContactPage() {
+
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -66,9 +70,44 @@ export default function ContactPage() {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await res.json();
+
+      if (res.ok) {
+        toast({
+          title: 'Message Sent!',
+          description: result.message,
+        });
+
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        toast({
+          title: 'Submission Failed',
+          description: result.error || 'Failed to send message',
+        });
+      }
+    } catch (err) {
+      console.error(err);
+      toast({
+        title: 'Error',
+        description: 'An unexpected error occurred. Please try again.',
+      });
+    }
   };
 
   return (

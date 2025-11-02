@@ -7,6 +7,13 @@ interface SEOProps {
   image?: string;
   url?: string;
   type?: 'website' | 'article';
+  icons?: {};
+  manifest?: string;
+  openGraph?: {};
+  twitter?: {};
+  authors?: {};
+  viewport?: string;
+  robots?: {};
 }
 
 export function generateMetadata({
@@ -30,6 +37,11 @@ export function generateMetadata({
       'Industrial Solutions Africa',
       ...keywords,
     ],
+    icons: {
+      icon: "/favicon.ico",
+      shortcut: "/favicon-16x16.png",
+      apple: "/apple-touch-icon.png",
+    },
     authors: [{ name: 'Grofol Projects Limited' }],
     openGraph: {
       type,

@@ -19,7 +19,12 @@ import {
 import { useState } from 'react';
 import { CheckCircle, Clock, Users, Shield } from 'lucide-react';
 
+import contactdetails from '@/data/contact-details.json';
+import { useToast } from '@/hooks/use-toast';
+
 export default function QuotePage() {
+
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -40,13 +45,39 @@ export default function QuotePage() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+      e.preventDefault();
+      setIsSubmitting(true);
 
-    await new Promise(resolve => setTimeout(resolve, 2000));
+      try {
+        const res = await fetch('/api/quote', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
 
-    setIsSubmitted(true);
-    setIsSubmitting(false);
+        const result = await res.json();
+
+        if (res.ok) {
+          toast({
+            title: 'Quote Request Sent!',
+            description: 'Your project details have been submitted successfully.',
+          });
+          setIsSubmitted(true);
+        } else {
+          toast({
+            title: 'Submission Failed',
+            description: result.error || 'Please try again later.',
+          });
+        }
+      } catch (err) {
+        console.error(err);
+        toast({
+          title: 'Error',
+          description: 'An unexpected error occurred. Please try again.',
+        });
+      } finally {
+        setIsSubmitting(false);
+      }
   };
 
   if (isSubmitted) {
@@ -368,10 +399,10 @@ export default function QuotePage() {
                   Need immediate assistance?
                 </p>
                 <p className="text-lg font-semibold text-[var(--color-content)] mb-2">
-                  +234 XXX XXX XXXX
+                  {contactdetails.phone[0].value}
                 </p>
                 <p className="text-sm text-[var(--color-muted)]">
-                  info@grofolprojects.com
+                  {contactdetails.email[0].value}
                 </p>
               </Card>
             </div>

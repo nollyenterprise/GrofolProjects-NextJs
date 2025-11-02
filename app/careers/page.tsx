@@ -265,7 +265,8 @@ export default function CareersPage() {
 
                   <div className="lg:flex-shrink-0">
                     <Button variant="secondary" size="lg" asChild>
-                      <Link href={`/careers/${job.id}`}>
+                      {/* <Link href={`/careers/${job.id}`}> */}
+                      <Link href={`/contact/`}>
                         Apply Now
                       </Link>
                     </Button>
