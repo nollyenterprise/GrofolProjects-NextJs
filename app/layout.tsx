@@ -30,9 +30,9 @@ export const metadata: Metadata = generateMetadata({
     'EPIC Services Nigeria',
   ],
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/images/icon.png",
+    shortcut: "/images/icon.png",
+    apple: "/images/icon.png",
   },
   manifest: "/site.webmanifest",
   openGraph: {
@@ -43,7 +43,7 @@ export const metadata: Metadata = generateMetadata({
     siteName: "Engineering Solutions Africa",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://grofolprojects.com/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Engineering Solutions Africa",
@@ -57,8 +57,8 @@ export const metadata: Metadata = generateMetadata({
     title: "Engineering Solutions in Africa",
     description:
       "Providing power, marine, oil & gas, and renewable energy solutions across Africa.",
-    creator: "@yourhandle",
-    images: ["/og-image.jpg"],
+    creator: "@grofolprojects",
+    images: ["https://grofolprojects.com/images/og-image.jpg"],
   },
   authors: [{ name: "Engineering Solutions Africa", url: "https://grofolprojects.com" }],
   viewport: "width=device-width, initial-scale=1.0",

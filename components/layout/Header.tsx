@@ -30,10 +30,11 @@ const navigation = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(true); // bypass default is true
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
 
   useEffect(() => {
+    return setIsScrolled(true); // bypass default is true
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
@@ -61,13 +62,13 @@ export function Header() {
               height={175}
               style={{height: 'auto'}}
               alt='Grofol Logo'
-            />:<Image
-              src={'/images/grofol-white.png'}
+            />:<div className="bg-white rounded-2xl"><Image
+              src={'/images/grofol.png'}
               width={175}
               height={175}
               style={{height: 'auto'}}
               alt='Grofol Logo'
-            />}
+            /></div>}
           </Link>
 
           <div className="hidden lg:flex items-center space-x-1">
