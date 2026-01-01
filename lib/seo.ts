@@ -38,9 +38,9 @@ export function generateMetadata({
       ...keywords,
     ],
     icons: {
-      icon: "/favicon.ico",
-      shortcut: "/favicon-16x16.png",
-      apple: "/apple-touch-icon.png",
+      icon: "/icon.png",
+      shortcut: "/icon.png",
+      apple: "/icon.png",
     },
     authors: [{ name: 'Grofol Projects Limited' }],
     openGraph: {

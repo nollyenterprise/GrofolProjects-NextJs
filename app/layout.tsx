@@ -18,7 +18,9 @@ const poppins = Poppins({
   display: 'swap',
 });
 
-export const metadata: Metadata = generateMetadata({
+export const metadata: Metadata = {
+metadataBase: new URL('https://grofolprojects.com'),
+...generateMetadata({
   title: 'Engineering Solutions in Africa',
   description: 'Leading Nigerian engineering, oil & gas, and industrial consulting company providing power, marine, and renewable energy solutions across Africa.',
   keywords: [
@@ -73,7 +75,7 @@ export const metadata: Metadata = generateMetadata({
       "max-video-preview": -1,
     },
   },
-});
+})};
 
 export default function RootLayout({
   children,
